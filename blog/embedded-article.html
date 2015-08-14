@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- Mirrored from demos.rafalborowski.com/cloudhoster/light/blog.html by HTTrack Website Copier/3.x [XR&CO'2013], Fri, 16 May 2014 20:37:10 GMT -->
+<head>
+        <meta charset="utf-8">
+        <!-- Set latest rendering mode for IE -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+           <title>DiscoveryAnalytics</title>
+
+
+        <!-- Set viewport for mobile devices to zoom to 100% -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Loading fonts in the header makes it work in IE<9 -->
+        <link href='http://fonts.googleapis.com/css?family=Bitter:400italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+
+         <!-- Including bootstrap 2.3.1 -->
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <!-- Including Font Awesome 3.0 styles -->
+        <link rel="stylesheet" href="../css/font-awesome.min.css">
+        <!-- Including Slider styles -->
+        <link rel="stylesheet" href="../css/slider.css" />
+        <!-- Including main template styles -->
+        <link rel="stylesheet" href="../css/main.css">
+
+        <!-- Loading jQuery liblary from CDN with a local fallback when CDN not responding. 
+             Version 2.0 is available but it is the same as 1.9.1 but without IE8 support -->
+        <!-- Load jQuery from CDN -->
+        <script src="../js/jquery-1.9.1.min.js"></script>
+        <!-- Check if "window" is available. If not that means jQuery didn't load from CDN so instead use local version (otherwise skip) -->
+        <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
+
+        <!-- If the browser version of IE is less than 9 load HTML5 & CSS3 polyfills -->
+        <!--[if lt IE 9]>
+            <script type="text/javascript" src="js/html5shiv.min.js"></script>
+            <script type="text/javascript" src="js/selectivizr.min.js"></script>
+            <link rel="stylesheet" href="css/ie.css">
+        <![endif]-->
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Popover modal box containing client login form -->
+        <div id="customer-login" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h5 id="myModalLabel">Customer area login:</h5>
+            </div><!-- modal-header end -->
+
+            <div class="modal-body">
+                <p>Login</p>
+                <input type="text" class="customer-login-input" name='login-input' placeholder="Login">
+                <p>Password</p>
+                <input type="password" class="customer-login-input" name='password-input' placeholder="Password">
+            </div><!-- modal-body end -->
+            
+            <div class="modal-footer">
+                <div class="customer-help-links">
+                    <a href="#">Forgot your password?</a>
+                </div>
+                <button class="btn btn-primary">Login</button>
+            </div><!-- modal-footer end -->
+
+        </div><!-- customer-login end -->
+
+        <!-- Start developing your site here -->
+        <div class="main-page-wrapper">
+
+            <div class="top-background">
+
+                <div class="top-menu-wrapper">
+
+                      <nav class="top-menu container">
+
+                            <ul>
+                            
+                    
+                            <!-- <li><a href="#"><i class="icon-envelope-alt"></i><strong> Submit</strong> a ticket</a></li> -->
+                            <li><a href="#" id="mobile-nav-button"><i class="icon-list-ul"></i><strong> Show/Hide</strong> a menu</a></li>
+                          <!--   <li><a href="#customer-login" data-toggle="modal"><i class="icon-user"></i><strong> Customer</strong> login</a></li> -->
+                        </ul>
+
+                    </nav> <!-- end top-menu -->
+
+                </div> <!-- end top-menu-wrapper -->
+
+                <div class="mobile-nav off"></div><!-- mobile-nav end -->
+   <header class="container">
+                    
+                    <div class="row">
+
+                        <div class="span4">
+                            <h1 class="logo clearfix">
+                                <a href="/"><img src="../img/logo.png" alt="DiscoveryAnalyticsLogo"></a>
+                            </h1>
+                        </div> <!-- end span4 -->
+                    
+                        <div class="span8">
+                            
+                            <nav class="main-menu">
+                                <ul>
+                                    <li><a href="../index.html" data-description="Welcome" class="current-menu-item">Home</a></li>
+                                    <li><a href="#" data-description="We Provide">Services</a>
+                                        <ul>
+                                            <li><a href="../services/rubyonrails.html">Ruby on Rails</a></li>
+                                             <li><a href="../services/microsoft.html">Microsoft Technolgies</a></li>
+                                            <li><a href="../services/php.html">
+                                                
+                                                PHP Web Application Develpment
+                                            </a></li>
+                                            
+                                            <li><a href="../services/mobile.html">Mobile Application Development</a></li>
+                                            <li><a href="../services/digital.html">Digital Signage</a></li>
+                                            <li><a href="../services/lrfid.html">RFID BASED Systems</a></li>
+                                           
+                                            <li><a href="../services/embedded.html">
+                                                Embeded System Integrations
+                                            </a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" data-description="Our company">About</a>
+                                        <ul>
+                                          
+                                            <li><a href="../about.html">About Company</a></li>
+                                             
+                                        </ul>
+                                    </li>
+
+                                    <li><a href="#" data-description="IT articles">Blog</a>
+                                        <ul>
+                                            <li><a href="ror-article.html">Ruby on Rails</a></li>
+                                            <li><a href="embedded-article.html">Digital Signage Article</a></li>
+                                             <li><a href="ba-analytics.html">Business Analytics</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="../contact.html" data-description="and quotes">Contact</a></li>
+                                </ul>
+                            </nav> <!-- end main-menu -->
+
+                        </div> <!-- end span8 -->
+
+                    </div> <!-- end row -->
+
+                    <hr />
+
+                </header> <!-- end container -->
+            </div> <!-- top-background end -->
+
+            <section id="content">
+               
+                <article class="post format-standard">
+                    
+                    <div class="container">
+
+                        <div class="row">
+
+                            <div class="span2">
+                                
+                                <ul class="post-meta">
+                                    <li class="post-date">3 <div class="post-month">MAY</div></li>
+                                    <li class="post-category"><i class="icon-file-alt"></i><span>Article</span></li>
+                                    <li class="post-author"><i class="icon-user"></i><span>By Anil Durgam</span></li>
+                                    <li class="post-tags"><i class="icon-tags"></i><span>Digital Signage</span></li>
+                                    <li class="post-comments"><i class="icon-comment"></i><span>15 Comments</span></li>
+                                </ul>
+
+                            </div><!-- span2 -->
+
+                            <div class="span10">
+                                
+                                <h2 class="post-title">
+                                <!-- <a href="single-article.html"> -->
+                                Digital Signage on the Planet
+                                <!-- </a> -->
+                                </h2>
+
+                                <!-- <a href="single-article.html"> -->
+                                <img src="../img/page-images/post-image2.jpg" alt="Servers image" class="post-image">
+                                <!-- </a> -->
+
+                                <p>What is Digital Signage?<br><hr>
+
+Digital signs are a form of electronic display that shows television programming, menus, information, advertising and other messages. Digital signs (frequently utilizing technologies such as LCD, LED, plasma displays, or projected images to display content) can be found in both public and private environments, including retail stores, hotels, restaurants, and corporate buildings, amongst other locations.
+
+Digital signs are used for many different purposes and there is no definitive list. However, below are some of the most common applications of digital sign:</p>
+
+                            </div><!-- span10 end -->
+
+                        </div><!-- row end -->
+
+                    </div><!-- conteiner end -->
+
+                </article><!-- article end -->
+
+                <article class="post format-quote">
+                    
+                    <div class="container">
+
+                        <div class="row">
+
+                            <div class="span2">
+                                
+                                <ul class="post-meta">
+                                    <li class="post-date">1 <div class="post-month">MAY</div></li>
+                                    <li class="post-category"><i class="icon-quote-left"></i><span>Quote</span></li>
+                                    <li class="post-author"><i class="icon-user"></i><span>John Doe</span></li>
+                                    <li class="post-tags"><i class="icon-tags"></i><span>Wise, quote</span></li>
+                                    <li class="post-comments"><i class="icon-comment"></i><span>6 Comments</span></li>
+                                </ul>
+
+                            </div><!-- span2 -->
+
+                            <div class="span10">
+                                
+                                <h2 class="post-title">
+                                <!-- <a href="single-article.html"> -->
+                                A wise man once said:
+                                <!-- </a> -->
+                                </h2>
+
+                                <blockquote>
+                                    <p>A complex system that works is invariably found to have evolved from a simple system that worked. The inverse proposition also appears to be true: A complex system designed from scratch never works and cannot be made to work. You have to start over, beginning with a working simple system.</p>
+                                    <cite>JOHN GALL</cite>
+                                </blockquote>
+
+                            </div><!-- span10 end -->
+
+                        </div><!-- row end -->
+
+                    </div><!-- conteiner end -->
+
+                </article><!-- article end -->
+
+                <article class="post format-video">
+                    
+                    <div class="container">
+
+                        <div class="row">
+
+                            <div class="span2">
+                                
+                                <ul class="post-meta">
+                                    <li class="post-date">28 <div class="post-month">APR</div></li>
+                                    <li class="post-category"><i class="icon-film"></i><span>Video</span></li>
+                                    <li class="post-author"><i class="icon-user"></i><span>John Doe</span></li>
+                                    <li class="post-tags"><i class="icon-tags"></i><span>Server room, hosting</span></li>
+                                    <li class="post-comments"><i class="icon-comment"></i><span>10 Comments</span></li>
+                                </ul>
+
+                            </div><!-- span2 -->
+
+                            <div class="span10">
+                                
+                                <h2 class="post-title">
+                                <!-- <a href="single-article.html"> -->
+                                Take a tour of our server room
+                                <!-- </a> -->
+                                </h2>
+
+                                <iframe src="http://player.vimeo.com/video/56879439"></iframe>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus dolore est porro debitis aspernatur sequi in laboriosam dignissimos doloribus quas tempora minus omnis? Tenetur ab libero animi fuga itaque excepturi non reprehenderit odit? Expedita illum quaerat itaque cupiditate blanditiis error.</p>
+
+                            </div><!-- span10 end -->
+
+                        </div><!-- row end -->
+
+                    </div><!-- conteiner end -->
+
+                </article><!-- article end -->
+
+                <article class="post format-link">
+                    
+                    <div class="container">
+
+                        <div class="row">
+
+                            <div class="span2">
+                                
+                                <ul class="post-meta">
+                                    <li class="post-date">24 <div class="post-month">APR</div></li>
+                                    <li class="post-category"><i class="icon-link"></i><span>Link</span></li>
+                                    <li class="post-author"><i class="icon-user"></i><span>John Doe</span></li>
+                                    <li class="post-tags"><i class="icon-tags"></i><span>Security, hackers, hosting</span></li>
+                                    <li class="post-comments"><i class="icon-comment"></i><span>34 Comments</span></li>
+                                </ul>
+
+                            </div><!-- span2 -->
+
+                            <div class="span10">
+                                
+                                <h2 class="post-title">
+                                <!-- <a href="single-article.html"> -->
+                                Great read about security
+                                <!-- </a> -->
+                                </h2>
+
+                                <div class="link-container"> 
+
+                                    <a href="#">http://www.securitymagazine.com/server-security.html</a>
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam ea excepturi cum explicabo quod dignissimos nesciunt eveniet optio similique nemo ad numquam consequuntur? Cupiditate voluptates nisi blanditiis earum necessitatibus nobis illum consequuntur exercitationem maxime nihil sint ducimus id consequatur fugiat aut. Voluptatum ut incidunt reiciendis obcaecati consequatur aut dolor quasi inventore! Obcaecati ipsam illum laborum dolor rem sequi quae laboriosam praesentium itaque repellat a nostrum mollitia alias saepe unde perferendis omnis dolorum ad incidunt veritatis corrupti exercitationem sapiente aspernatur.</p>
+
+                                </div><!-- link-container end -->
+
+                            </div><!-- span10 end -->
+
+                        </div><!-- row end -->
+
+                    </div><!-- conteiner end -->
+
+                </article><!-- article end -->
+
+                <article class="post format-standard">
+                    
+                    <div class="container">
+
+                        <div class="row">
+
+                            <div class="span2">
+                                
+                                <ul class="post-meta">
+                                    <li class="post-date">19 <div class="post-month">APR</div></li>
+                                    <li class="post-category"><i class="icon-file-alt"></i><span>Article</span></li>
+                                    <li class="post-author"><i class="icon-user"></i><span>John Doe</span></li>
+                                    <li class="post-tags"><i class="icon-tags"></i><span>Future, hosting</span></li>
+                                    <li class="post-comments"><i class="icon-comment"></i><span>15 Comments</span></li>
+                                </ul>
+
+                            </div><!-- span2 -->
+
+                            <div class="span10">
+                                
+                                <h2 class="post-title">
+                                <!-- <a href="single-article.html"> -->
+                                The future of web hosting
+                                <!-- </a> -->
+                                </h2>
+
+                                <a href="single-article.html"><img src="img/page-images/post-image2.jpg" alt="Servers image" class="post-image"></a>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus dolore est porro debitis aspernatur sequi in laboriosam dignissimos doloribus quas tempora minus omnis? Tenetur ab libero animi fuga itaque excepturi non reprehenderit odit? Expedita illum quaerat itaque cupiditate blanditiis error.</p>
+
+                            </div><!-- span10 end -->
+
+                        </div><!-- row end -->
+
+                    </div><!-- conteiner end -->
+
+                </article><!-- article end -->
+
+                <div class="container">
+
+                    <div class="row">
+
+                        <div class="span12">
+
+                            <ul class="pagination">
+
+                                <li><a href="#">← Previous</a></li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">Next →</a></li>
+
+                            </ul><!-- pagination end -->
+
+                        </div><!-- span12 end -->
+
+                    </div><!-- row end -->
+
+                </div><!-- container end -->
+
+            </section><!-- content end -->
+
+      <footer id="footer">
+
+                <div class="container">
+                    
+                    <div class="row">
+
+                        <div class="span3">
+                            
+                            <h5>DiscoveryAnalytics</h5>
+
+                            <p>DiscoveryAnalyticsis a Software development company from Hyderabad, India. </p>
+
+                        </div><!-- span3 end -->
+
+                        <div class="span3">
+                            
+                            <h5>Our Services</h5>
+
+                                <!-- footer services -->
+                              
+                                <ul>
+                                    <li><a href="../services/rubyonrails.html">Ruby on Rails</a></li>
+                                     <li><a href="../services/microsoft.html">Microsoft Technolgies</a></li>
+                                    <li><a href="../services/php.html">
+                                        
+                                        PHP Web Application Develpment
+                                    </a></li>
+                                    
+                                    <li><a href="../services/mobile.html">Mobile Application Development</a></li>
+                                    <li><a href="../services/digital.html">Digital Signage</a></li>
+                                    <li><a href="../services/lrfid.html">RFID BASED Systems</a></li>
+                                   
+                                    <li><a href="../services/embedded.html">
+                                        Embeded System Integrations
+                                    </a></li>
+
+                                </ul>
+                                   
+                                <!-- footer services -->
+                            </div><!-- span3 end -->
+
+                        <div class="span3">
+                            
+                            <h5>Our Comapny</h5>
+
+                            <ul>
+                                <li><a href="../about/about.html"><strong>About</strong> our comapny</a></li>
+                                <li><a href="#"><strong>Team</strong></a></li>
+                                <li><a href="../about/careers.html"><strong>Careers</strong> </a></li>
+                                <li><a href="digital-signage.html"><strong>Blog</strong></a></li>
+                            </ul>
+
+                        </div><!-- span3 end -->
+
+                        <div class="span3">
+                            
+                            <h5>Contact Us</h5>
+
+                            <ul class="support-list">
+                                <li><a href="#customer-login" data-toggle="modal"><i class="icon-user"></i><strong>DiscoveryAnalytics</strong> IT Services PVT Ltd</a></li>
+                                
+                                <address>
+
+                                     <a href="mailto:contact@discoveryanalytics.net">contact@discoveryanalytics.net</a><br> 
+                                    
+                                    </address>
+                            </ul>
+
+                        </div><!-- span3 end -->                      
+
+                    </div><!-- row end -->
+
+                    <div class="row">
+
+                        <div id="newsletter-wrapper" class="span8">
+                            
+                            <div id="newsletter">
+                                
+                                <h5 class="visible-desktop">Sign-up to our newsletter:</h5>
+                                <h5 class="hidden-desktop">Newsletter sign-up:</h5>
+
+                                <form id='newsletterForm'>
+                                    <input type="text" class="input-box" name="user-email" placeholder="Enter your email.">
+                                    <button type='submit' class='myinputbtn' name='submitf' id="submitf">Sign up</button>
+                                </form>
+
+                            </div><!-- newsletter end -->
+
+                        </div><!-- newsletter-wrapper end -->
+                        
+                        <div id="social-icons-wrapper" class="span4">
+                            
+                            <div id="social-icons">
+                                
+                                <h5 class="visible-desktop">Connect via:</h5>
+
+                                <ul>
+                                    <li><a href="#"><i class="icon-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com/discoveryanalytics"><i class="icon-facebook"></i></a></li>
+                                    <li><a href="#"><i class="icon-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                                </ul>
+
+                            </div><!-- social-icons end -->
+
+                        </div><!-- social-icons-wrapper end -->
+                    
+                    </div><!-- row end -->
+
+                    <!-- this is a container for the newsletter fail or success message -->
+                    <div id='message_post2'></div><!-- message_post2 end -->
+
+                    <hr />
+
+                    <div class="row">
+
+                        <p class="span12">© Copyright 2013. DiscoveryAnalytics IT Services Ltd. All rights reserved.</p>
+                    
+                    </div><!-- row end -->
+
+                </div><!-- container end -->
+
+                <a href="#" class="go-top" style="display: inline;">Go Top</a>
+                
+            </footer>
+
+
+        </div><!-- end main-page-wrapper -->
+
+        <!-- Loading all JS files the asynchronous way -->
+        <!-- Twitter Bootstrap JavaScript file required for transitions, pupups, modals and other elements  -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Include fitvids script -->
+        <script src="js/fitvids.js"></script>
+
+        <!-- Main file containing all other scripts. This is done to avoid multiple HTTP requests -->
+        <script src="js/main.js"></script>
+
+    </body>
+
+<!-- Mirrored from demos.rafalborowski.com/cloudhoster/light/blog.html by HTTrack Website Copier/3.x [XR&CO'2013], Fri, 16 May 2014 20:37:13 GMT -->
+</html><style type="text/css">
+@media all and (max-width: 699px) and (min-width: 520px), (min-width: 1151px) {
+  #mobile-nav-button {
+    display: none;
+  }
+}
+</style>

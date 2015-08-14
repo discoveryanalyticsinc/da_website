@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- Mirrored from demos.rafalborowski.com/cloudhoster/light/contact.html by HTTrack Website Copier/3.x [XR&CO'2013], Fri, 16 May 2014 20:37:15 GMT -->
+<head>
+        <meta charset="utf-8">
+        <!-- Set latest rendering mode for IE -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DiscoveryAnalytics</title>
+
+
+        <!-- Set viewport for mobile devices to zoom to 100% -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Loading fonts in the header makes it work in IE<9 -->
+        <link href='http://fonts.googleapis.com/css?family=Bitter:400italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+
+        <!-- Including bootstrap styles - includes normalize and reset, grid system, layouts, responsive styles and media queries -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+                <!-- Including Font Awesome 3.0 styles -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <!-- Including main template styles -->
+        <link rel="stylesheet" href="css/main.css">
+
+        <!-- Loading jQuery liblary from CDN with a local fallback when CDN not responding.
+             This is done here not at the bottom of the page to support selectivizr for IE -->
+        <!-- Load jQuery from CDN -->
+        <script src="../../../code.jquery.com/jquery.min.js"></script>
+        <!-- Check if "window" is available. If not that means jQuery didn't load from CDN so instead use local version (otherwise skip) -->
+        <script>window.jQuery || document.write('<script src="js/jquery-1.8.3.min.html"><\/script>')</script>
+
+        <!-- If the browser version of IE is less than 9 load HTML5 & CSS3 polyfills -->
+        <!--[if lt IE 9]>
+            <script type="text/javascript" src="js/html5shiv.min.js"></script>
+            <script type="text/javascript" src="js/selectivizr.min.js"></script>
+            <link rel="stylesheet" href="css/ie.css">
+        <![endif]-->
+
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+<style type="text/css">
+@media all and (max-width: 699px) and (min-width: 520px), (min-width: 1151px) {
+  #mobile-nav-button {
+    display: none;
+  }
+}
+</style>
+    <body>
+
+        <!-- Popover modal box containing client login form -->
+        <div id="customer-login" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h5 id="myModalLabel">Customer area login:</h5>
+            </div><!-- modal-header end -->
+
+            <div class="modal-body">
+                <p>Login</p>
+                <input type="text" class="customer-login-input" name='login-input' placeholder="Login">
+                <p>Password</p>
+                <input type="password" class="customer-login-input" name='password-input' placeholder="Password">
+            </div><!-- modal-body end -->
+            
+            <div class="modal-footer">
+                <div class="customer-help-links">
+                    <a href="#">Forgot your password?</a>
+                </div>
+                <button class="btn btn-primary">Login</button>
+            </div><!-- modal-footer end -->
+
+        </div><!-- customer-login end -->
+
+        <!-- Start developing your site here -->
+        <div class="main-page-wrapper">
+
+            <div class="top-background">
+
+                <div class="top-menu-wrapper">
+
+                       <nav class="top-menu container">
+
+                        <ul>
+                            
+                 <!--            <li><a href="#"><i class="icon-comment"></i><strong> Live caht</strong> support</a></li>
+                            <li><a href="#"><i class="icon-envelope-alt"></i><strong> Submit</strong> a ticket</a></li> -->
+                            <li><a href="#" id="mobile-nav-button"><i class="icon-list-ul"></i><strong> Show/Hide</strong> a menu</a></li>
+                          <!--   <li><a href="#customer-login" data-toggle="modal"><i class="icon-user"></i><strong> Customer</strong> login</a></li> -->
+                        </ul>
+
+                    </nav> <!-- end top-menu -->
+
+                </div> <!-- end top-menu-wrapper -->
+
+                <div class="mobile-nav off"></div><!-- mobile-nav end -->
+
+                <header class="container">
+                    
+                    <div class="row">
+
+                        <div class="span4">
+                            <h1 class="logo clearfix">
+                                <a href="/"><img src="img/logo.png" alt="DiscoveryAnalyticsLOGO"></a>
+                            </h1>
+                        </div> <!-- end span4 -->
+                    
+                        <div class="span8">
+                            
+                                 
+                            <nav class="main-menu">
+                                <ul>
+                                    <li><a href="index.html" data-description="Welcome" class="current-menu-item">Home</a></li>
+                                    <li><a href="#" data-description="We Provide">Services</a>
+                                        <ul>
+                                            <li><a href="services/rubyonrails.html">Ruby on Rails</a></li>
+                                             <li><a href="services/microsoft.html">Microsoft Technolgies</a></li>
+                                            <li><a href="services.html#php">
+                                                
+                                                PHP Web Application Develpment
+                                            </a></li>
+                                            
+                                            <li><a href="services.html#mobile">Mobile Application Development</a></li>
+                                            <li><a href="services.html#digital">Digital Signage</a></li>
+                                            <li><a href="services/lrfid.html">RFID BASED Systems</a></li>
+                                           
+                                            <li><a href="../services/embedded.html">
+                                                Embeded System Integrations
+                                            </a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" data-description="Our company">About</a>
+                                        <ul>
+                                          
+                                            <li><a href="about/about.html">About Company</a></li>
+                                              
+                                        </ul>
+                                    </li>
+
+                                    <li><a href="#" data-description="IT articles">Blog</a>
+                                        <ul>
+                                            <li><a href="blog/ror-article.html">Ruby on Rails</a></li>
+                                            <li><a href="blog/embedded-article.html">Digital Signage Article</a></li>
+                                             <li><a href="blog/ba-analytics.html">Business Analytics</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="contact.html" data-description="and quotes">Contact</a></li>
+                                </ul>
+                            </nav> <!-- end main-menu -->
+
+                        </div> <!-- end span8 -->
+
+                    </div> <!-- end row -->
+
+                    <hr />
+               
+                </header> <!-- end container -->
+
+            </div> <!-- top-background end -->
+
+            <section id="content">
+               
+                <div class="white-section contact">
+                    
+                    <div class="container">
+
+                        <div class="row">
+
+                            <div class="span6">
+                                
+                                <h4>We would love to hear from you</h4>
+                                <p>We are here to answer any questions you may have about our combadi experiences. Reach out to us and we'll respond as soon as we can. </p>
+
+                                <h4>Contact info</h4>
+
+                                <ul>
+                                    <li><i class="icon-briefcase"></i>
+                                    <a href="http://www.discoveryanalytics.net">DiscoveryAnalytics Pvt LTD</a></li>
+                                    <!-- <li><i class="icon-map-marker"></i> 3rd Floor,East Block,Samridhi Vasyam,JaiHind colony,Madhapur</li> -->
+                                    <li><i class="icon-map-marker"></i>4-3/1, 1st Floor, Hill Street, Secunderabad.</li>
+                                    <li><i class="icon-map-marker"></i>Hyderabad,Telangana,India</li>
+                                    
+                                    <li><i class="icon-envelope-alt"></i> Email: <a href="mailto:contact@discoveryanalytics.net">contact@discooveryanalytics.net</a></li>
+                                    
+                                </ul>
+
+                            </div><!-- span6 end -->
+                            
+                            <div class="span6">
+
+                                <div id="map"></div>
+
+                            </div><!-- span6 end -->
+
+                        </div><!-- row end -->
+
+                        <div class="row">
+
+                            <div class="span12">
+                                
+                                <form method='post' name='ContactForm' id='contactForm'>
+                                    <p>Your name:</p>
+                                    <input type="text" class="input-box" name="user-name" placeholder="Please enter your name.">
+                                    <p>Email address:</p>
+                                    <input type="text" class="input-box" name="user-email" placeholder="Please enter your email address.">
+                                    <p>Subject:</p>
+                                    <input type="text" class="input-box" name="user-subject" placeholder="Purpose of this message.">
+                                    <p class="right-message-box">Message:</p>
+                                    <textarea class="input-box right-message-box message-box" name="user-message" placeholder="Your message."></textarea>
+                                    <button type='submit' class='myinputbtn' name='submitf' id="submitf">Send your message</button>
+                                    <div id='message_post'></div>
+                                </form>
+
+                            </div><!-- span12 end -->
+                        
+                        </div><!-- row end -->
+
+                    </div><!-- container end -->
+
+                </div><!-- white-section end -->
+
+            </section><!-- content end -->
+
+            <footer id="footer">
+
+                <div class="container">
+                    
+                    <div class="row">
+
+                        <div class="span3">
+                            
+                            <h5>DiscoveryAnalytics</h5>
+
+                            <p>DiscoveryAnalyticsis a Software development company from Hyderabad, India. </p>
+
+                        </div><!-- span3 end -->
+
+                        <div class="span3">
+                            
+                            <h5>Our Services</h5>
+
+                                <!-- footer services -->
+                              
+                                <ul>
+                                    <li><a href="services/rubyonrails.html">Ruby on Rails</a></li>
+                                     <li><a href="services/microsoft.html">Microsoft Technolgies</a></li>
+                                    <li><a href="services/php.html">
+                                        
+                                        PHP Web Application Develpment
+                                    </a></li>
+                                    
+                                    <li><a href="services/mobile.html">Mobile Application Development</a></li>
+                                    <li><a href="services/digital.html">Digital Signage</a></li>
+                                    <li><a href="services/lrfid.html">RFID BASED Systems</a></li>
+                                   
+                                    <li><a href="services/embedded.html">
+                                        Embeded System Integrations
+                                    </a></li>
+
+                                </ul>
+                                   
+                                <!-- footer services -->
+                            </div><!-- span3 end -->
+
+                        <div class="span3">
+                            
+                            <h5>Our Comapny</h5>
+
+                            <ul>
+                                <li><a href="about/about.html"><strong>About</strong> our comapny</a></li>
+                                <li><a href="#"><strong>Team</strong></a></li>
+                                <li><a href="careers.html"><strong>Careers</strong> </a></li>
+                                <li><a href="blog/digital-signage.html"><strong>Blog</strong></a></li>
+                            </ul>
+
+                        </div><!-- span3 end -->
+
+                        <div class="span3">
+                            
+                            <h5>Contact Us</h5>
+
+                            <ul class="support-list">
+                                <li><a href="#customer-login" data-toggle="modal"><i class="icon-user"></i><strong>DiscoveryAnalytics</strong> IT Services PVT Ltd</a></li>
+                                
+                                <address>
+
+                                     <a href="mailto:contact@discoveryanalytics.net">contact@discoveryanalytics.net</a><br> 
+                                    
+                                    </address>
+                            </ul>
+
+                        </div><!-- span3 end -->                      
+
+                    </div><!-- row end -->
+
+                    <div class="row">
+
+                        <div id="newsletter-wrapper" class="span8">
+                            
+                            <div id="newsletter">
+                                
+                                <h5 class="visible-desktop">Sign-up to our newsletter:</h5>
+                                <h5 class="hidden-desktop">Newsletter sign-up:</h5>
+
+                                <form method='post' name='ContactForm' id='newsletterForm'>
+                                    <input type="text" class="input-box" name="user-email" placeholder="Enter your email.">
+                                    <button type='submit' class='myinputbtn' name='submitf' id="submitf">Sign up</button>
+                                </form>
+
+                            </div><!-- newsletter end -->
+
+                        </div><!-- newsletter-wrapper end -->
+                        
+                        <div id="social-icons-wrapper" class="span4">
+                            
+                            <div id="social-icons">
+                                
+                                <h5 class="visible-desktop">Connect via:</h5>
+
+                                <ul>
+                                    <li><a href="#"><i class="icon-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com/discoveryanalytics"><i class="icon-facebook"></i></a></li>
+                                    <li><a href="#"><i class="icon-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                                </ul>
+
+                            </div><!-- social-icons end -->
+
+                        </div><!-- social-icons-wrapper end -->
+                    
+                    </div><!-- row end -->
+
+                    <!-- this is a container for the newsletter fail or success message -->
+                    <div id='message_post2'></div><!-- message_post2 end -->
+
+                    <hr />
+
+                    <div class="row">
+
+                        <p class="span12">© Copyright 2013. DiscoveryAnalytics IT Services Ltd. All rights reserved.</p>
+                    
+                    </div><!-- row end -->
+
+                </div><!-- container end -->
+
+                <a href="#" class="go-top" style="display: inline;">Go Top</a>
+                
+            </footer>
+
+        </div><!-- end main-page-wrapper -->
+
+        <!-- Loading all JS files the asynchronous way -->
+        <!-- Twitter Bootstrap JavaScript file required for transitions, pupups, modals and other elements  -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Google map script -->
+        <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+        <script src="js/gmaps.js"></script>
+
+        <!-- Main file containing all other scripts. This is done to avoid multiple HTTP requests -->
+        <script src="js/main.js"></script>
+
+    </body>
+
+<!-- Mirrored from demos.rafalborowski.com/cloudhoster/light/contact.html by HTTrack Website Copier/3.x [XR&CO'2013], Fri, 16 May 2014 20:37:16 GMT -->
+</html>

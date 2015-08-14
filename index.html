@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- Mirrored from demos.rafalborowski.com/cloudhoster/light/ by HTTrack Website Copier/3.x [XR&CO'2013], Fri, 16 May 2014 20:36:12 GMT -->
+<head>
+ <base href=""/>
+        <meta charset="utf-8">
+        <!-- Set latest rendering mode for IE -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>Discovery Analytics</title>
+
+        <!-- Set viewport for mobile devices to zoom to 100% -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="DiscoveryAnalytics" />
+        <meta name="keywords" content="DiscoveryAnalytics,ruby on rails development company,ror,Ruby,RUby,PHP development company,PHP,DRUPAL,.net,Magento,Amazon Web Services" />
+     
+            <!-- Loading fonts in the header makes it work in IE<9 -->
+            <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+
+        <!-- Including bootstrap 2.3.1 -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Including Font Awesome 3.0 styles -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <!-- Including Slider styles -->
+        <link rel="stylesheet" href="css/slider.css" />
+        <!-- Including main template styles -->
+        <link rel="stylesheet" href="css/main.css">
+
+        <!-- Loading jQuery liblary from CDN with a local fallback when CDN not responding. 
+             Version 2.0 is available but it is the same as 1.9.1 but without IE8 support -->
+    	<!-- Load jQuery from CDN -->
+        <script src="../../../code.jquery.com/jquery-1.9.1.min.js"></script>
+        <!-- Check if "window" is available. If not that means jQuery didn't load from CDN so instead use local version (otherwise skip) -->
+        <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
+
+        <!-- If the browser version of IE is less than 9 load HTML5 & CSS3 polyfills -->
+        <!--[if lt IE 9]>
+            <link rel="stylesheet" href="css/ie.css">
+            <script type="text/javascript" src="js/html5shiv.min.js"></script>
+            <script type="text/javascript" src="js/selectivizr.min.js"></script>       
+        <![endif]-->
+        
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+
+    <body class="home">
+
+        <!-- Popover modal box containing client login form -->
+        <div id="customer-login" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h5 id="myModalLabel">Customer area login:</h5>
+            </div><!-- modal-header end -->
+
+            <div class="modal-body">
+                <p>Login</p>
+                <input type="text" class="customer-login-input" name='login-input' placeholder="Login">
+                <p>Password</p>
+                <input type="password" class="customer-login-input" name='password-input' placeholder="Password">
+            </div><!-- modal-body end -->
+            
+            <div class="modal-footer">
+                <div class="customer-help-links">
+                    <a href="#">Forgot your password?</a>
+                </div>
+                <button class="btn btn-primary">Login</button>
+            </div><!-- modal-footer end -->
+
+        </div><!-- customer-login end -->
+
+        <!-- Start developing your site here -->
+        <div class="main-page-wrapper">
+
+            <div class="top-background">
+
+                <div class="top-menu-wrapper">
+
+                    <nav class="top-menu container">
+
+                        <ul>
+                            
+                 <!--            <li><a href="#"><i class="icon-comment"></i><strong> Live caht</strong> support</a></li>
+                            <li><a href="#"><i class="icon-envelope-alt"></i><strong> Submit</strong> a ticket</a></li> -->
+                            <li><a href="#" id="mobile-nav-button"><i class="icon-list-ul"></i><strong> Show/Hide</strong> a menu</a></li>
+                          <!--   <li><a href="#customer-login" data-toggle="modal"><i class="icon-user"></i><strong> Customer</strong> login</a></li> -->
+                        </ul>
+
+                    </nav> <!-- end top-menu -->
+
+                </div> <!-- end top-menu-wrapper -->
+
+                <div class="mobile-nav off"></div><!-- mobile-nav end -->
+
+                <header class="container">
+                    
+                    <div class="row">
+
+                        <div class="span4">
+                            <h1 class="logo clearfix">
+                                <a href="/"><img src="img/logo.png" alt="DiscoveryAnalyticsLogo"></a>
+                            </h1>
+                        </div> <!-- end span4 -->
+                    
+                        <div class="span8">
+                            
+                            <nav class="main-menu">
+                                <ul>
+                                    <li><a href="/" data-description="Welcome" class="current-menu-item">Home</a></li>
+                                    <li><a href="#" data-description="We Provide">Services</a>
+                                        <ul>
+                                            <li><a href="services/rubyonrails.html">Ruby on Rails</a></li>
+                                             <li><a href="services/microsoft.html">Microsoft Technolgies</a></li>
+                                            <li><a href="services/php.html">
+                                                
+                                                PHP Web Application Develpment
+                                            </a></li>
+                                            
+                                            <li><a href="services/mobile.html">Mobile Application Development</a></li>
+                                            <li><a href="services/digital.html">Digital Signage</a></li>
+                                            <li><a href="services/lrfid.html">RFID BASED Systems</a></li>
+                                           
+                                            <li><a href="../services/embedded.html">
+                                                Embeded System Integrations
+                                            </a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" data-description="Our company">About</a>
+                                        <ul>
+                                          
+                                            <li><a href="about/about.html">About Company</a></li>
+                                              
+                                        </ul>
+                                    </li>
+
+                                    <li><a href="#" data-description="IT articles">Blog</a>
+                                        <ul>
+                                            <li><a href="blog/ror-article.html">Ruby on Rails</a></li>
+                                            <li><a href="blog/embedded-article.html">Digital Signage Article</a></li>
+                                             <li><a href="blog/ba-analytics.html">Business Analytics</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="contact.html" data-description="and quotes">Contact</a></li>
+                                </ul>
+                            </nav> <!-- end main-menu -->
+
+                        </div> <!-- end span8 -->
+
+                    </div> <!-- end row -->
+
+                    <hr />
+
+                    <div id="slider-container" class="clearfix">
+
+                        <div class="sequence-theme">
+                            <div id="sequence">
+
+                                <img class="sequence-prev" src="img/bt-prev.png" alt="Previous Frame" />
+                                <img class="sequence-next" src="img/bt-next.png" alt="Next Frame" />
+
+                                <ul class="sequence-canvas">
+
+
+                                   
+                                    <li class="animate-in">
+                                        <h2 class="title">Ruby on Rails</h2>
+                                        <h3 class="subtitle"><strong>Ruby on Rails Application Developement</strong> <hr></h3>
+                                        <hr>
+                                        <ul class="slider-info">
+                                            <li><img src="img/icons/16x16/dedicated-server.png" alt="feature"><strong>Ruby on Rails Software Development
+                                            </strong> </li>
+                                            <li><img src="img/icons/16x16/bandwidth.png" alt="feature"><strong>  Product support and Maintenance</strong></li>
+                                            <li><img src="img/icons/16x16/database.png" alt="feature"><strong>  Onsite consulting</strong></li>
+                                           
+                                        </ul>
+                                        <div class="slider-cta">
+                                           
+                                        </div>
+                                        <img class="slider-image" src="img/page-images/slider-image1.png" alt="Server">
+                                    </li>
+                                    <li>
+                                        <h2 class="title">.NET Applications</h2>
+                                        <h3 class="subtitle"><strong>We delivers</strong>  projects on shorter deadlines without compromising on the quality of work. .</h3>
+                                        <ul class="slider-info">
+                                            <li><img src="img/icons/16x16/dedicated-server.png" alt="feature"><strong>Real-time and host-to-host integration.</strong></li>
+                                            <li><img src="img/icons/16x16/bandwidth.png" alt="feature"><strong>Process Automation.</strong></li>
+                                             <li><img src="img/icons/16x16/dedicated-server.png" alt="feature"><strong>Web Application Development
+                                            </strong> </li>
+                                             <li><img src="img/icons/16x16/dedicated-server.png" alt="feature"><strong>Windows Application Development
+                                            </strong> </li>
+                                             <li><img src="img/icons/16x16/dedicated-server.png" alt="feature"><strong>Mobile Application Development
+                                            </strong> </li>
+                                          
+                                        </ul>
+                                     <!--    <div class="slider-cta">
+                                            <a href="#" class="button"><strong>Buy</strong> this plan now »</a>
+                                            <a href="#" class="button"><strong>View other</strong> plans »</a>
+                                        </div> -->
+                                        <img class="slider-image" src="img/page-images/slider-image2.png" alt="Server">
+                                    </li>
+                                    <li>
+                                        <h2 class="title">PHP Web Applications </h2>
+                                        <h3 class="subtitle"><strong>We build customized PHP applications!</strong></h3>
+                                        <ul class="slider-info">
+                                            <li><img src="img/icons/16x16/dedicated-server.png" alt="feature"><strong> E-Commerce Applications</strong> </li>
+                                            <li><img src="img/icons/16x16/bandwidth.png" alt="feature"><strong>Web Sites</strong> </li>
+                                            <li><img src="img/icons/16x16/database.png" alt="feature"><strong>Payment Gateway Integrations</strong> </li>
+                                            <li><img src="img/icons/16x16/email.png" alt="feature"><strong>SOCIAL API INTEGRATIONS</strong> </li>
+                                              <li><img src="img/icons/16x16/email.png" alt="feature"><strong>PHP Web Applications <br> With MVC FRAMEWORKS</strong> </li>
+                                              <li><img src="img/icons/16x16/email.png" alt="feature"><strong>PHP Web Applications <br> With MVC FRAMEWORKS</strong> </li>
+                                        </ul>
+                                      <!--   <div class="slider-cta">
+                                            <a href="#" class="button"><strong>Buy</strong> this plan now »</a>
+                                            <a href="#" class="button"><strong>View other</strong> plans »</a>
+                                        </div> -->
+                                        <img class="slider-image" src="img/page-images/slider-image3.png" alt="Server">
+                                    </li>
+                                      <li class="animate-in">
+                                        <h2 class="title">Digital Signage</h2>
+                                        <h3 class="subtitle"><strong>We provide Customizable digital signage platform.</strong></h3>
+                                        <ul class="slider-info">
+                                            <li><img src="img/icons/16x16/dedicated-server.png" alt="feature"><strong>Automation</strong></li>
+                                            <li><img src="img/icons/16x16/bandwidth.png" alt="feature"><strong>Reliability.</strong> </li>
+                                            <li><img src="img/icons/16x16/database.png" alt="feature"><strong>Innovation.</strong> </li>
+                                            <li><img src="img/icons/16x16/email.png" alt="feature"><strong>Accountability.</strong> </li>
+                                        </ul>
+                                        <div class="slider-cta">
+                                            <a href="#" class="button"><strong>Buy</strong> this plan now »</a>
+                                            <a href="#" class="button"><strong>View other</strong> plans »</a>
+                                        </div>
+                                        <img class="slider-image" src="img/page-images/slider-image4.png" alt="Server">
+                                    </li>
+                                      <li class="animate-in">
+                                        <h2 class="title">RFID  Solutions</h2>We provide
+                                        <h3 class="subtitle"><strong>RFID based soultions for all industries.</strong> </h3>
+                                        <ul class="slider-info">
+                                            <li><img src="img/icons/16x16/dedicated-server.png" alt="feature"><strong>Door Locking System</strong> </li>
+                                            <li><img src="img/icons/16x16/bandwidth.png" alt="feature"><strong>Bike Theft Protection Systems</strong> </li>
+                                            <li><img src="img/icons/16x16/database.png" alt="feature"><strong>Home Automation Soultions</strong> </li>
+                                           
+                                        </ul>
+                                       
+                                        <img class="slider-image" src="img/page-images/slider-image5.png" alt="Server">
+                                    </li>
+                                      <li class="animate-in">
+                                        <h2 class="title">Embedded Integrations</h2>
+                                        <h3 class="subtitle"><strong>We provide </strong> embedded system integrations for all domains</h3>
+                                        <ul class="slider-info">
+                                            <li><img src="img/icons/16x16/dedicated-server.png" alt="feature"><strong>Digital Signage</strong></li>
+                                            <li><img src="img/icons/16x16/bandwidth.png" alt="feature"><strong></strong>Humanoid Robots</li>
+                                         
+                                        </ul>
+                                        
+                                        <img class="slider-image" src="img/page-images/slider-image6.png" alt="Server">
+                                    </li>
+            
+
+                                </ul>
+
+                                <ul class="sequence-pagination">
+                                    <li><img src="img/page-images/slider-image1.png" alt="Model 1" /></li>
+                                    <li><img src="img/page-images/slider-image2.png" alt="Model 2" /></li>
+                                    <li><img src="img/page-images/slider-image3.png" alt="Model 3" /></li>
+                                     <li><img src="img/page-images/slider-image4.png" alt="Model 1" /></li>
+                                    <li><img src="img/page-images/slider-image5.png" alt="Model 2" /></li>
+                                    <li><img src="img/page-images/slider-image6.png" alt="Model 3" /></li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                    </div> <!-- slider-container end -->
+               
+                </header> <!-- end container -->
+
+            </div><!-- top-background end -->
+
+            <section id="content">
+               
+                <div class="white-section">
+                    
+                    <div class="container">
+
+                        <div class="row">
+
+                            <h1 class="span12 homepage-style">Services We Provide</h1>
+
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="span4">
+                                <h4>Service We Provide</h4>
+                                <p>We are a software development company that specializes in <strong>Ruby on Rails,.Net,PHP application </strong>development.The company was built carefully and gradually over a period of five years, a 1,500-person business process outsourcing company.The company has experience in projects of varying scale – our most recent activity (just coming to a close) has been a multi-million dollar, two year project for a Fortune 100 banking giant.</p>
+                                <ul class="features-list">
+
+                                    <li><img src="img/icons/16x16/control-panel.png" alt="feature">Ruby on Rails Application Developement</li>
+                                    <li><img src="img/icons/16x16/secure-server.png" alt="feature">PHP Web Application Development</li>
+                                    <li><img src="img/icons/16x16/website-builder.png" alt="feature">MircoSoft Technologies</li>                               
+                                    <li><img src="img/icons/16x16/domain-names.png" alt="feature">Hosting Services</li>
+                                    <li><img src="img/icons/16x16/iphone-control-panel.png" alt="feature">Mobile Application Development</li>
+                                    <li><img src="img/icons/16x16/e-commerce.png" alt="feature">E-commerce solutions</li>
+                                    
+                                    <li><img src="img/icons/16x16/database.png" alt="feature">MySQL & PostageSQL Databases</li>
+                                    <li><img src="img/icons/16x16/domain-names.png" alt="feature">Embedded Application Development</li>
+                                
+                                </ul>
+                            </div><!-- span4 end -->
+
+                            <div class="span4">
+
+
+                                <div class="card-feature-bg">
+                                    <div class="card-feature">
+                                        <img src="img/icons/32x32/web-hosting.png" alt="feature" class="feature-icon">
+                                        <h5>Ruby on Rails Development</h5>
+                                        <p> we've developed and deployed a series of production grade Ruby on Rails applications following a lean, agile development process.</p>
+                                        <a href="services/rubyonrails.html" class="button simple">View Ruby on Rails Applications</a>
+                                    </div><!-- card-feature end -->
+                                </div><!-- card-feature-bg end -->
+
+                                <div class="card-feature-bg">
+                                    <div class="card-feature">
+                                        <img src="img/icons/32x32/dedicated-server.png" alt="feature" class="feature-icon">
+                                        <h5>.Net Application Development</h5>
+                                        <p>With .NET being the core offering at <strong>DiscoveryAnalytics</strong>, we have served thousands of client projects across a variety of industries and countries.   - </p>
+                                        <a href="services/microsoft.html" class="button simple">View our success stories.</a>
+                                    </div><!-- card-feature end -->
+                                </div><!-- card-feature-bg end -->
+                            </div><!-- span6 end -->
+
+                            <div class="span4">
+                                <div class="card-feature-bg">
+                                    <div class="card-feature">
+                                        <img src="img/icons/32x32/data-center.png" alt="feature" class="feature-icon">
+                                        <h5>Mobile Application Development</h5>
+                                        <p><strong>DiscoveryAnalytics</strong> designs and develops high quality Websites and innovative Mobile applications. We specialize in iPhone, iPad, Android, and Windows mobile apps.</p>
+                                        <a href="#" class="button simple">View Mobile Apps</a>
+                                    </div><!-- card-feature end -->
+                                </div><!-- card-feature-bg end -->
+
+                                <div class="card-feature-bg">
+                                    <div class="card-feature">
+                                        <img src="img/icons/32x32/web-space.png" alt="feature" class="feature-icon">
+                                        <h5>Embedded System Integrations</h5>
+                                        <p>Lorem ipsum dolor sit amet, cons ectetur adipisicing elit. Ipsam eos iste vel fuga laboriosam deleniti comodi.</p>
+                                        <a href="services/embedded.html" class="button simple">View our Embedded System Integrations</a>
+                                    </div><!-- card-feature end -->
+                                </div><!-- card-feature-bg end -->
+                            </div><!-- span6 end -->
+
+                        </div><!-- row end -->
+
+                    </div><!-- container end -->
+
+                </div><!-- white-section end -->
+
+
+                <div class="blue-section">
+                    
+                    <div class="container">
+                        
+                        <div class="row">
+                            
+                            <h1 class="span12 homepage-style">What our clients are saying?</h1>
+
+                        </div><!-- row end -->
+
+                        <div class="row">
+                                
+                            <p class="span12">We are providing software services since 2006. In the past few years many small and large companies have trusted us to help their companies to grow in the Web World. Here is just a sample of what they have to say about services we provide.</p>
+
+                        </div><!-- row end -->
+
+                        <div class="row">
+                            
+                            <ul class="testimonials">
+                                <li class="span6">
+                                    <div class="testimonial">
+                                        <img src="img/page-images/testimonial-picture1.jpg" alt="Person image" class="testimonial-image">
+                                        <p>The Service here is great. I would highly recommend DiscoveryAnalyticsto anybody wanting their applications.</p>
+                                        <span>John Doe, Awesome Inc.</span>
+                                    </div><!-- testimonial end -->
+                                </li>
+                                <li class="span6">
+                                    <div class="testimonial">
+                                        <img src="img/page-images/testimonial-picture2.jpg" alt="Person image" class="testimonial-image">
+                                        <p>The quality and reliability of your software services is outstanding. We wouldn’t dare to move our website anywhere else.</p>
+                                        <span>Clare Sue, Cool Bits Ltd.</span>
+                                    </div><!-- testimonial end -->
+                                </li>
+                            </ul>
+
+                        </div><!-- row end -->
+
+                        <div class="row">
+
+                             <p class="span12">These are just some of the comments from our clients. To see more more testimonials go to our <a href="#">Testimonial Page</a></p>
+                             
+                        </div><!-- row end -->
+
+                    </div><!-- container end -->
+
+                </div><!-- blue-section end -->
+
+                <div class="white-section">
+                    
+                    <div class="container">
+
+                        <div class="row">
+                        
+                            <h1 class="span12 homepage-style">Some of the clients we served </h1>
+
+                        </div><!-- row end -->
+
+                        <div class="row">
+
+                            <p class="span12"><strong>DiscoveryAnalytics</strong> provides you everything you need for your company - web applications, mobile applications, cloud hosting and more. Many companies accross the World uses our services including some of the biggest names in the Internet: </p>
+                            
+                        </div><!-- row end -->
+
+                        <div class="row">
+                            
+                            <ul class="logos span12">
+                                <li><img src="img/page-images/logo1.png" alt="Logo image"></li>
+                                <li><img src="img/page-images/logo2.png" alt="Logo image"></li>
+                                <li><img src="img/page-images/logo3.png" alt="Logo image"></li>
+                                <li><img src="img/page-images/logo4.png" alt="Logo image"></li>
+                            </ul>
+
+                        </div><!-- row end -->
+
+                    </div><!-- conteiner end -->
+
+                </div><!-- white-section end -->
+
+            </section><!-- content end -->
+
+            <footer id="footer">
+
+                <div class="container">
+                    
+                    <div class="row">
+
+                        <div class="span3">
+                            
+                            <h5>DiscoveryAnalytics</h5>
+
+                            <p>DiscoveryAnalyticsis a Software development company from Hyderabad, India. </p>
+
+                        </div><!-- span3 end -->
+
+                        <div class="span3">
+                            
+                            <h5>Our Services</h5>
+
+                                <!-- footer services -->
+                              
+                                <ul>
+                                    <li><a href="services/rubyonrails.html">Ruby on Rails</a></li>
+                                     <li><a href="services/microsoft.html">Microsoft Technolgies</a></li>
+                                    <li><a href="services/php.html">
+                                        
+                                        PHP Web Application Develpment
+                                    </a></li>
+                                    
+                                    <li><a href="services/mobile.html">Mobile Application Development</a></li>
+                                    <li><a href="services/digital.html">Digital Signage</a></li>
+                                    <li><a href="services/lrfid.html">RFID BASED Systems</a></li>
+                                   
+                                    <li><a href="services/embedded.html">
+                                        Embeded System Integrations
+                                    </a></li>
+
+                                </ul>
+                                   
+                                <!-- footer services -->
+                            </div><!-- span3 end -->
+
+                        <div class="span3">
+                            
+                            <h5>Our Comapny</h5>
+
+                            <ul>
+                                <li><a href="about/about.html"><strong>About</strong> our comapny</a></li>
+                                <li><a href="#"><strong>Team</strong></a></li>
+                                <li><a href="careers.html"><strong>Careers</strong> </a></li>
+                                <li><a href="blog/digital-signage.html"><strong>Blog</strong></a></li>
+                            </ul>
+
+                        </div><!-- span3 end -->
+
+                        <div class="span3">
+                            
+                            <h5>Contact Us</h5>
+
+                            <ul class="support-list">
+                                <li><a href="#customer-login" data-toggle="modal"><i class="icon-user"></i><strong>DiscoveryAnalytics</strong> IT Services PVT Ltd</a></li>
+                                
+                                <address>
+
+                                     <a href="mailto:contact@discoveryanalytics.net">contact@discoveryanalytics.net</a><br> 
+                                    
+                                    </address>
+                            </ul>
+
+                        </div><!-- span3 end -->                      
+
+                    </div><!-- row end -->
+
+                    <div class="row">
+
+                        <div id="newsletter-wrapper" class="span8">
+                            
+                            <div id="newsletter">
+                                
+                                <h5 class="visible-desktop">Sign-up to our newsletter:</h5>
+                                <h5 class="hidden-desktop">Newsletter sign-up:</h5>
+
+                                <form method='post' name='ContactForm' id='newsletterForm'>
+                                    <input type="text" class="input-box" name="user-email" placeholder="Enter your email.">
+                                    <button type='submit' class='myinputbtn' name='submitf' id="submitf">Sign up</button>
+                                </form>
+
+                            </div><!-- newsletter end -->
+
+                        </div><!-- newsletter-wrapper end -->
+                        
+                        <div id="social-icons-wrapper" class="span4">
+                            
+                            <div id="social-icons">
+                                
+                                <h5 class="visible-desktop">Connect via:</h5>
+
+                                <ul>
+                                    <li><a href="#"><i class="icon-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com/discoveryanalytics"><i class="icon-facebook"></i></a></li>
+                                    <li><a href="#"><i class="icon-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                                </ul>
+
+                            </div><!-- social-icons end -->
+
+                        </div><!-- social-icons-wrapper end -->
+                    
+                    </div><!-- row end -->
+
+                    <!-- this is a container for the newsletter fail or success message -->
+                    <div id='message_post2'></div><!-- message_post2 end -->
+
+                    <hr />
+
+                    <div class="row">
+
+                        <p class="span12">© Copyright 2013. DiscoveryAnalytics IT Services Ltd. All rights reserved.</p>
+                    
+                    </div><!-- row end -->
+
+                </div><!-- container end -->
+
+                <a href="#" class="go-top" style="display: inline;">Go Top</a>
+                
+            </footer>
+
+        </div><!-- end main-page-wrapper -->
+
+        <!-- Loading all JS files the asynchronous way -->
+        <!-- Twitter Bootstrap JavaScript file required for transitions, pupups, modals and other elements  -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Slider script -->
+        <script src="js/jquery.sequence-min.js"></script>
+
+        <!-- Main file containing all other scripts. This is done to avoid multiple HTTP requests -->
+        <script src="js/main.js"></script>
+
+    </body>
+
+<!-- Mirrored from demos.rafalborowski.com/cloudhoster/light/ by HTTrack Website Copier/3.x [XR&CO'2013], Fri, 16 May 2014 20:36:49 GMT -->
+</html><style type="text/css">
+@media all and (max-width: 699px) and (min-width: 520px), (min-width: 1151px) {
+  #mobile-nav-button {
+    display: none;
+  }
+}
+</style>

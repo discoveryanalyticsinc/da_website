@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- Mirrored from demos.rafalborowski.com/cloudhoster/light/hosting-plans.html by HTTrack Website Copier/3.x [XR&CO'2013], Fri, 16 May 2014 20:37:03 GMT -->
+<head>
+        <meta charset="utf-8">
+        <!-- Set latest rendering mode for IE -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>DiscoveryAnalytics</title>
+
+
+        <!-- Set viewport for mobile devices to zoom to 100% -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Loading fonts in the header makes it work in IE<9 -->
+        <link href='http://fonts.googleapis.com/css?family=Bitter:400italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+
+     <!-- Including bootstrap 2.3.1 -->
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <!-- Including Font Awesome 3.0 styles -->
+        <link rel="stylesheet" href="../css/font-awesome.min.css">
+        <!-- Including Slider styles -->
+        <link rel="stylesheet" href="../css/slider.css" />
+        <!-- Including main template styles -->
+        <link rel="stylesheet" href="../css/main.css">
+
+        <!-- Loading jQuery liblary from CDN with a local fallback when CDN not responding. 
+             Version 2.0 is available but it is the same as 1.9.1 but without IE8 support -->
+        <!-- Load jQuery from CDN -->
+        <script src="../js/jquery-1.9.1.min.js"></script>
+        <!-- Check if "window" is available. If not that means jQuery didn't load from CDN so instead use local version (otherwise skip) -->
+        <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
+
+        <!-- If the browser version of IE is less than 9 load HTML5 & CSS3 polyfills -->
+        <!--[if lt IE 9]>
+            <script type="text/javascript" src="js/html5shiv.min.js"></script>
+            <script type="text/javascript" src="js/selectivizr.min.js"></script>
+            <link rel="stylesheet" href="css/ie.css">
+        <![endif]-->
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Popover modal box containing client login form -->
+        <div id="customer-login" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h5 id="myModalLabel">Customer area login:</h5>
+            </div><!-- modal-header end -->
+
+            <div class="modal-body">
+                <p>Login</p>
+                <input type="text" class="customer-login-input" name='login-input' placeholder="Login">
+                <p>Password</p>
+                <input type="password" class="customer-login-input" name='password-input' placeholder="Password">
+            </div><!-- modal-body end -->
+            
+            <div class="modal-footer">
+                <div class="customer-help-links">
+                    <a href="#">Forgot your password?</a>
+                </div>
+                <button class="btn btn-primary">Login</button>
+            </div><!-- modal-footer end -->
+
+        </div><!-- customer-login end -->
+
+        <!-- Start developing your site here -->
+        <div class="main-page-wrapper">
+
+            <div class="top-background">
+
+                <div class="top-menu-wrapper">
+
+                 <nav class="top-menu container">
+
+                          <ul>
+                            
+                 <!--            <li><a href="#"><i class="icon-comment"></i><strong> Live caht</strong> support</a></li>
+                            <li><a href="#"><i class="icon-envelope-alt"></i><strong> Submit</strong> a ticket</a></li> -->
+                            <li><a href="#" id="mobile-nav-button"><i class="icon-list-ul"></i><strong> Show/Hide</strong> a menu</a></li>
+                          <!--   <li><a href="#customer-login" data-toggle="modal"><i class="icon-user"></i><strong> Customer</strong> login</a></li> -->
+                        </ul>
+
+                    </nav> <!-- end top-menu -->
+
+                </div> <!-- end top-menu-wrapper -->
+
+                <div class="mobile-nav off"></div><!-- mobile-nav end -->
+
+              <header class="container">
+                    
+                    <div class="row">
+
+                        <div class="span4">
+                            <h1 class="logo clearfix">
+                                <a href="/"><img src="../img/logo.png" alt="DiscoveryAnalyticsLogo"></a>
+                            </h1>
+                        </div> <!-- end span4 -->
+                    
+                        <div class="span8">
+                            
+                            <nav class="main-menu">
+                                <ul>
+                                    <li><a href="../index.html" data-description="Welcome" class="current-menu-item">Home</a></li>
+                                    <li><a href="#" data-description="We Provide">Services</a>
+                                        <ul>
+                                            <li><a href="rubyonrails.html">Ruby on Rails</a></li>
+                                             <li><a href="microsoft.html">Microsoft Technolgies</a></li>
+                                            <li><a href="php.html">
+                                                
+                                                PHP Web Application Develpment
+                                            </a></li>
+                                            
+                                            <li><a href="mobile.html">Mobile Application Development</a></li>
+                                            <li><a href="digital.html">Digital Signage</a></li>
+                                            <li><a href="lrfid.html">RFID BASED Systems</a></li>
+                                           
+                                            <li><a href="embedded.html">
+                                                Embeded System Integrations
+                                            </a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" data-description="Our company">About</a>
+                                        <ul>
+                                          
+                                            <li><a href="../about/about.html">About Company</a></li>
+                                                                                     </ul>
+                                    </li>
+
+                                    <li><a href="#" data-description="IT articles">Blog</a>
+                                        <ul>
+                                            <li><a href="../blog/ror-article.html">Ruby on Rails</a></li>
+                                            <li><a href="../blog/embedded-article.html">Digital Signage Article</a></li>
+                                             <li><a href="../blog/ba-analytics.html">Business Analytics</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="../contact.html" data-description="and quotes">Contact</a></li>
+                                </ul>
+                            </nav> <!-- end main-menu -->
+
+                        </div> <!-- end span8 -->
+
+                    </div> <!-- end row -->
+
+                    <hr />
+
+                </header> <!-- end container -->
+
+            </div><!-- top-background end -->
+
+            <section id="content">
+               
+                <div class="white-section">
+                    
+                    <div class="container">
+
+                        <div class="row">
+                            
+                            <div class="span8">
+                            
+                                <h4>Mobile Application Development.</h4>
+
+                                <p>.</p>
+                                
+                                <div id="accordion" class="accordion">
+
+                                    <div class="accordion-group">
+
+                                        <div class="accordion-heading">
+
+                                            <a class="accordion-toggle opened" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">IPHONE APPLICATION DEVELOPMENT</a>
+
+                                        </div><!-- accordion-heading end -->
+
+                                        <div id="collapseOne" class="accordion-body collapse in">
+
+                                            <div class="accordion-inner">
+
+                                                <p>We are a leading iPhone app development company located in India. We have deployed 100+ iPhone apps in appstore. We offer a wide range of custom iPhone app development services, Our customers come from around the globe. iMOBDEV Technologies has a collection of skilled iOS developers. We have gathered the most talented and experienced professionals to work in a team to provide an excellent outcome in iPhone App Development.</p>
+
+                                            </div><!-- accordion-inner end -->
+
+                                        </div><!-- accordion-body end -->
+
+                                    </div><!-- accordion-group end -->
+
+                                    <div class="accordion-group">
+
+                                        <div class="accordion-heading">
+
+                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Andriod Application Development</a>
+
+                                        </div><!-- accordion-heading end -->
+
+                                        <div id="collapseTwo" class="accordion-body collapse">
+
+                                            <div class="accordion-inner">
+
+                                                <p>
+                                                <ul><li>Health and Medical android App Development</li>
+<li>Fashion android App Development</li>
+<li>News android App Development</li>
+<li>Travel android App Development</li>
+<li>Business android App Development</li>
+<li>Music android App Development</li>
+<li>Learning android App Development</li>
+<li>Education android App Development</li>
+<li>Fitness android App Development</p>
+
+                                            </div><!-- accordion-inner end -->
+
+                                        </div><!-- accordion-body end -->
+
+                                    </div><!-- accordion-group end -->
+
+                                    <div class="accordion-group">
+
+                                        <div class="accordion-heading">
+
+                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">IPAD APP DEVELOPMENT</a>
+
+                                        </div><!-- accordion-heading end -->
+
+                                        <div id="collapseThree" class="accordion-body collapse">
+
+                                            <div class="accordion-inner">
+
+                                                <p>Strict adherence to apple guidelines of coding <br>
+<ul>
+<li>50% turn around time</li>
+<li>Experienced iPad app developers</li>
+<li>Continuous updates of the project</li>
+<li>Source code security with non-disclosure agreement</li>
+<li>Thorough app testing for bug free application</li>
+<li>Enhanced user experience</li>
+<li>On time deployment of app</li>
+<li>Cost effective application development</li>
+<li>100% customer satisfaction</li></p>
+
+                                            </div><!-- accordion-inner end -->
+
+                                        </div><!-- accordion-body end -->
+
+                                    </div><!-- accordion-group end -->
+
+                                </div><!-- accordion end -->
+
+                            </div><!-- span8 end -->
+                            
+                            <div class="span4">
+                                
+                                <img src="../img/page-images/iphone_da.png" alt="Server" class="pull-down">
+
+                                <p>We are a leading iPhone app development company located in India. We have deployed 100+ iPhone apps in appstore. We offer a wide range of custom iPhone app development services, Our customers come from around the globe. <strong>DiscoveryAnalytics</strong> has a collection of skilled iOS developers. We have gathered the most talented and experienced professionals to work in a team to provide an excellent outcome in iPhone App Development.
+
+                            </div><!-- span4 end -->
+
+                        </div><!-- row end -->
+                        <hr>
+                        <br>
+                        <div class="row center">
+ 
+                            <div class="span3">
+
+                                <h4>IPHONE APPLICATION DEVELOPMENT</h4>
+                                <div class="huge-round-icon"><i class="icon-cloud"></i></div>
+                                <p>We offer iPhone App development services from conceptual design to implementation, quality control, release, upgrades and maintenance.</p>
+                           
+                                
+                            </div><!-- span3 end -->
+
+                            <div class="span3">
+                                
+                                <h4>Andriod Application Development</h4>
+                                <div class="huge-round-icon"><i class="icon-globe"></i></div>
+                                <p>Our android application development team is highly trained with various successful android apps deployed in the android market to its credit.</p> 
+                               
+
+                            </div><!-- span3 end -->    
+
+                            <div class="span3">
+
+                                <h4>IPAD APPLICATION DEVELOPMENT</h4>
+                                <div class="huge-round-icon"><i class="icon-cog"></i></div>
+                                <p>If you are looking forward for any iPad app development services,Feel free to drop us an enquiry 
+                                and our business analyst will contact you with an appropriate solution..</p>
+                                
+                                
+                            </div><!-- span3 end -->
+
+                            <div class="span3">
+                                
+                                <h4>Titanium development</h4>
+                                <div class="huge-round-icon"><i class="icon-refresh"></i></div>
+                                <p>Appcelerator Titanium development is an open, extensible development environment for creating beautiful native apps across different mobile devices and OSs including iOS, Android, Windows and BlackBerry.</p> 
+                              
+
+                            </div><!-- span3 end -->  
+                        
+                        </div><!-- row end -->      
+
+                        <div class="row">
+                            
+                            <div class="span12">
+                                
+                                <div class="well clearfix">
+                                    
+                                    <p>If you need a <strong>custom plan</strong> simply contact with us <p class="visible-desktop">and we will provide it for you.</p></p>
+
+                                    <a href="#" class="button simple arrow pull-right">
+                                    Get custom quote
+                                    </a>
+
+                                </div><!-- message-box end -->
+
+                                <p>YOUR IDEAS ARE SAFE WITH <strong>DiscoveryAnalytics</strong>
+We follow the corporate ethics firmly. We are open to sign any Non Disclosure Agreement (NDA) with the client or third party, after which the source code and the designs will exclusively belong to you..</p>
+
+                            </div><!-- span12 end -->
+
+                        </div><!-- row end -->     
+
+                    </div><!-- conteiner end -->
+
+                </div><!-- white-section end -->
+
+            </section><!-- content end -->
+
+            <footer id="footer">
+
+                <div class="container">
+                    
+                    <div class="row">
+
+                        <div class="span3">
+                            
+                            <h5>DiscoveryAnalytics</h5>
+
+                            <p>DiscoveryAnalyticsis a Software development company from Hyderabad, India. </p>
+
+                        </div><!-- span3 end -->
+
+                        <div class="span3">
+                            
+                            <h5>Our Services</h5>
+
+                                <!-- footer services -->
+                              
+                                <ul>
+                                    <li><a href="rubyonrails.html">Ruby on Rails</a></li>
+                                     <li><a href="microsoft.html">Microsoft Technolgies</a></li>
+                                    <li><a href="php.html">
+                                        
+                                        PHP Web Application Develpment
+                                    </a></li>
+                                    
+                                    <li><a href="mobile.html">Mobile Application Development</a></li>
+                                    <li><a href="digital.html">Digital Signage</a></li>
+                                    <li><a href="lrfid.html">RFID BASED Systems</a></li>
+                                   
+                                    <li><a href="embedded.html">
+                                        Embeded System Integrations
+                                    </a></li>
+
+                                </ul>
+                                   
+                                <!-- footer services -->
+                            </div><!-- span3 end -->
+
+                        <div class="span3">
+                            
+                            <h5>Our Comapny</h5>
+
+                            <ul>
+                                <li><a href="../about/about.html"><strong>About</strong> our comapny</a></li>
+                                <li><a href="../about/team.html"><strong>Team</strong></a></li>
+                                <li><a href="../about/current_openings.html"><strong>Careers</strong> </a></li>
+                                <li><a href="../blog/digital-signage.html"><strong>Blog</strong></a></li>
+                            </ul>
+
+                        </div><!-- span3 end -->
+
+                        <div class="span3">
+                            
+                            <h5>Contact Us</h5>
+
+                            <ul class="support-list">
+                                <li><a href="#customer-login" data-toggle="modal"><i class="icon-user"></i><strong>DiscoveryAnalytics</strong> IT Services PVT Ltd</a></li>
+                                
+                                <address>
+
+                                     <a href="mailto:contact@discoveryanalytics.net">contact@discoveryanalytics.net</a><br> 
+                                    
+                                    </address>
+                            </ul>
+
+                        </div><!-- span3 end -->                      
+
+                    </div><!-- row end -->
+
+                    <div class="row">
+
+                        <div id="newsletter-wrapper" class="span8">
+                            
+                            <div id="newsletter">
+                                
+                                <h5 class="visible-desktop">Sign-up to our newsletter:</h5>
+                                <h5 class="hidden-desktop">Newsletter sign-up:</h5>
+
+                                <form method='post' name='ContactForm' id='newsletterForm'>
+                                    <input type="text" class="input-box" name="user-email" placeholder="Enter your email.">
+                                    <button type='submit' class='myinputbtn' name='submitf' id="submitf">Sign up</button>
+                                </form>
+
+                            </div><!-- newsletter end -->
+
+                        </div><!-- newsletter-wrapper end -->
+                        
+                        <div id="social-icons-wrapper" class="span4">
+                            
+                            <div id="social-icons">
+                                
+                                <h5 class="visible-desktop">Connect via:</h5>
+
+                                <ul>
+                                    <li><a href="#"><i class="icon-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com/discoveryanalytics"><i class="icon-facebook"></i></a></li>
+                                    <li><a href="#"><i class="icon-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                                </ul>
+
+                            </div><!-- social-icons end -->
+
+                        </div><!-- social-icons-wrapper end -->
+                    
+                    </div><!-- row end -->
+
+                    <!-- this is a container for the newsletter fail or success message -->
+                    <div id='message_post2'></div><!-- message_post2 end -->
+
+                    <hr />
+
+                    <div class="row">
+
+                        <p class="span12">© Copyright 2013. DiscoveryAnalytics IT Services Ltd. All rights reserved.</p>
+                    
+                    </div><!-- row end -->
+
+                </div><!-- container end -->
+
+                <a href="#" class="go-top" style="display: inline;">Go Top</a>
+                
+            </footer>
+
+        </div><!-- end main-page-wrapper -->
+
+        <!-- Loading all JS files the asynchronous way -->
+        <!-- Twitter Bootstrap JavaScript file required for transitions, pupups, modals and other elements  -->
+        <script src="../js/bootstrap.min.js"></script>
+
+        <!-- Main file containing all other scripts. This is done to avoid multiple HTTP requests -->
+        <script src="../js/main.js"></script>
+
+    </body>
+
+<!-- Mirrored from demos.rafalborowski.com/cloudhoster/light/hosting-plans.html by HTTrack Website Copier/3.x [XR&CO'2013], Fri, 16 May 2014 20:37:04 GMT -->
+</html><style type="text/css">
+@media all and (max-width: 699px) and (min-width: 520px), (min-width: 1151px) {
+  #mobile-nav-button {
+    display: none;
+  }
+}
+</style>
