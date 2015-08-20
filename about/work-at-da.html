@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     
-<!-- Mirrored from demos.rafalborowski.com/cloudhoster/light/about.html by HTTrack Website Copier/3.x [XR&CO'2013], Fri, 16 May 2014 20:37:06 GMT -->
+
 <head>
         <meta charset="utf-8">
         <!-- Set latest rendering mode for IE -->
@@ -43,14 +43,30 @@
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     </head>
 
-    <body>
+    <body class="home">
 
         <!-- Popover modal box containing client login form -->
         <div id="customer-login" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 
-            <!-- modal-header end -->
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h5 id="myModalLabel">Customer area login:</h5>
+            </div><!-- modal-header end -->
 
+            <div class="modal-body">
+                <p>Login</p>
+                <input type="text" class="customer-login-input" name='login-input' placeholder="Login">
+                <p>Password</p>
+                <input type="password" class="customer-login-input" name='password-input' placeholder="Password">
+            </div><!-- modal-body end -->
             
+            <div class="modal-footer">
+                <div class="customer-help-links">
+                    <a href="#">Forgot your password?</a>
+                </div>
+                <button class="btn btn-primary">Login</button>
+            </div><!-- modal-footer end -->
+
         </div><!-- customer-login end -->
 
         <!-- Start developing your site here -->
@@ -62,7 +78,7 @@
 
                     <nav class="top-menu container">
 
-                          <ul>
+                        <ul>
                             
                  <!--            <li><a href="#"><i class="icon-comment"></i><strong> Live caht</strong> support</a></li>
                             <li><a href="#"><i class="icon-envelope-alt"></i><strong> Submit</strong> a ticket</a></li> -->
@@ -82,19 +98,19 @@
 
                         <div class="span4">
                             <h1 class="logo clearfix">
-                                <a href="index-2.html"><img src="img/logo.png" alt="Cloud Hoster Logo"></a>
+                                <a href="../index.html"><img src="../img/logo.png" alt="DiscoveryAnalyticsLogo"></a>
                             </h1>
                         </div> <!-- end span4 -->
                     
                         <div class="span8">
                             
-                                <nav class="main-menu">
+                            <nav class="main-menu">
                                 <ul>
                                     <li><a href="../index.html" data-description="Welcome" class="current-menu-item">Home</a></li>
                                     <li><a href="../services/services.html" data-description="We Provide">Services</a>
                                         <ul>
+                                            <li><a href="../services/devops.html">DevOps</a></li>
                                             <li><a href="../services/rubyonrails.html">Ruby on Rails</a></li>
-                                             <li><a href="../services/microsoft.html">Microsoft Technolgies</a></li>
                                             <li><a href="../services/php.html">
                                                 
                                                 PHP Web Application Develpment
@@ -134,146 +150,14 @@
                     </div> <!-- end row -->
 
                     <hr />
-               
+
                 </header> <!-- end container -->
 
-            </div> <!-- top-background end -->
+            </div><!-- top-background end -->
 
-            <section id="content">
-               
-                <div class="white-section">
-                    
-                    <div class="container">
 
-                            
-                        <div class="row">
-                            
-                            <div class="span12">
-                                
-                                <h4>Meet our RUBY ON RAILS Team:</h4>
-                                <hr>
 
-                                <h3 class="text-center">We love Ruby on Rails</h3>
-
-                            </div>
-
-                            <div class="span3 staff">
-                                
-                                <img src="../img/page-images/testimonial-picture1.jpg" alt="Person image">
-
-                                <h5>Vashista Gattu, Technical Lead</h5>
-
-                                <p>Open Source hacker and ROR guru.</p>
- 
-                                <ul>
-                                    <li><a href="#"><i class="icon-envelope-alt"></i></a></li>
-                                    <li><a href="#"><i class="icon-facebook"></i></a></li>
-                                    <li><a href="#"><i class="icon-twitter"></i></a></li>
-                                    <li><a href="#"><i class="icon-google-plus"></i></a></li>
-                                </ul>
-
-                            </div><!-- span3 end -->
-
-                            <div class="span3 staff">
-                                
-                                <img src="../img/page-images/testimonial-picture4.jpg" alt="Person image">
-
-                                <h5>SAI KIRAN MOTHE, Sr.Software Engineer</h5>
-
-                                <p>He says "Ruby on Rails is my Heart."</p>
- 
-                                <ul>
-                                    <li><a href="#"><i class="icon-envelope-alt"></i></a></li>
-                                    <li><a href="#"><i class="icon-facebook"></i></a></li>
-                                    <li><a href="#"><i class="icon-twitter"></i></a></li>
-                                    <li><a href="#"><i class="icon-google-plus"></i></a></li>
-                                </ul>
-
-                            </div><!-- span3 end -->
-
-                            <div class="span3 staff">
-                                
-                                <img src="../img/page-images/testimonial-picture2.jpg" alt="Person image">
-
-                                <h5>Vamshi Sri Lakshmi, Ruby on Rails Engineer</h5>
-
-                                <p>She loves Ruby on Rails.She is a core Ruby girl from Hyderabad.</p>
- 
-                                <ul>
-                                    <li><a href="#"><i class="icon-envelope-alt"></i></a></li>
-                                    <li><a href="#"><i class="icon-facebook"></i></a></li>
-                                    <li><a href="#"><i class="icon-twitter"></i></a></li>
-                                    <li><a href="#"><i class="icon-google-plus"></i></a></li>
-                                </ul>
-
-                            </div><!-- span3 end -->
-
-                            <div class="span3 staff">
-                                
-                                <img src="../img/page-images/testimonial-picture4.jpg" alt="Person image">
-
-                                <h5>Harish,Rails Hacker</h5>
-
-                                <p>Harish drives his bike also in rails methodology.</p>
- 
-                                <ul>
-                                    <li><a href="#"><i class="icon-envelope-alt"></i></a></li>
-                                    <li><a href="#"><i class="icon-facebook"></i></a></li>
-                                    <li><a href="#"><i class="icon-twitter"></i></a></li>
-                                    <li><a href="#"><i class="icon-google-plus"></i></a></li>
-                                </ul>
-
-                            </div><!-- span3 end -->
-
-                           
-
-                        </div><!-- row end -->
-
-                        <div class="row">
-                             <div class="span3 staff">
-                                
-                                <img src="../img/page-images/testimonial-picture2.jpg" alt="Person image">
-
-                                <h5>Sindhrika</h5>
-
-                                <p>Sindhu lives in Ruby on Rails Cloud.</p>
- 
-                                <ul>
-                                    <li><a href="#"><i class="icon-envelope-alt"></i></a></li>
-                                    <li><a href="#"><i class="icon-facebook"></i></a></li>
-                                    <li><a href="#"><i class="icon-twitter"></i></a></li>
-                                    <li><a href="#"><i class="icon-google-plus"></i></a></li>
-                                </ul>
-
-                            </div><!-- span3 end -->
-
-                            <div class="span3 staff">
-                                
-                                <img src="../img/page-images/testimonial-picture4.jpg" alt="Person image">
-
-                                <h5>Sridhar,Rails Hacker</h5>
-
-                                <p>Sridhar is a Ruby GEEK.</p>
- 
-                                <ul>
-                                    <li><a href="#"><i class="icon-envelope-alt"></i></a></li>
-                                    <li><a href="#"><i class="icon-facebook"></i></a></li>
-                                    <li><a href="#"><i class="icon-twitter"></i></a></li>
-                                    <li><a href="#"><i class="icon-google-plus"></i></a></li>
-                                </ul>
-
-                            </div><!-- span3 end -->
-                            
-
-                        </div>
-
-                    </div><!-- conteiner end -->
-
-                </div><!-- white-section end -->
-
-            </section><!-- content end -->
-
-               <footer id="footer">
+            <footer id="footer">
 
                 <div class="container">
                     
@@ -283,7 +167,7 @@
                             
                             <h5>DiscoveryAnalytics</h5>
 
-                            <p>DiscoveryAnalyticsis a Software development company from Hyderabad, India. </p>
+                            <p>DiscoveryAnalyticsis. </p>
 
                         </div><!-- span3 end -->
 
@@ -295,7 +179,6 @@
                               
                                 <ul>
                                     <li><a href="../services/rubyonrails.html">Ruby on Rails</a></li>
-                                     <li><a href="services/microsoft.html">Microsoft Technolgies</a></li>
                                     <li><a href="../services/php.html">
                                         
                                         PHP Web Application Develpment
@@ -332,11 +215,11 @@
                             <h5>Contact Us</h5>
 
                             <ul class="support-list">
-                                <li><a href="#customer-login" data-toggle="modal"><i class="icon-user"></i><strong>DiscoveryAnalytics</strong> IT Services PVT Ltd</a></li>
+                                <li><a href="#customer-login" data-toggle="modal"><i class="icon-user"></i><strong>DiscoveryAnalytics</strong> </a></li>
                                 
                                 <address>
 
-                                     <a href="mailto:contact@discoveryanalytics.net">contact@discoveryanalytics.net</a><br> 
+                                     <a href="mailto:contact@danalyticsinc.com">contact@danalyticsinc.com</a><br> 
                                     
                                     </address>
                             </ul>
@@ -389,7 +272,7 @@
 
                     <div class="row">
 
-                        <p class="span12">© Copyright 2013. DiscoveryAnalytics IT Services Ltd. All rights reserved.</p>
+                        <p class="span12">© Copyright 2015. DiscoveryAnalytics. All rights reserved.</p>
                     
                     </div><!-- row end -->
 
@@ -403,14 +286,17 @@
 
         <!-- Loading all JS files the asynchronous way -->
         <!-- Twitter Bootstrap JavaScript file required for transitions, pupups, modals and other elements  -->
-        <script src="js/bootstrap.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+
+        <!-- Slider script -->
+        <script src="../js/jquery.sequence-min.js"></script>
 
         <!-- Main file containing all other scripts. This is done to avoid multiple HTTP requests -->
-        <script src="js/main.js"></script>
+        <script src="../js/main.js"></script>
 
     </body>
 
-<!-- Mirrored from demos.rafalborowski.com/cloudhoster/light/about.html by HTTrack Website Copier/3.x [XR&CO'2013], Fri, 16 May 2014 20:37:10 GMT -->
+
 </html><style type="text/css">
 @media all and (max-width: 699px) and (min-width: 520px), (min-width: 1151px) {
   #mobile-nav-button {
