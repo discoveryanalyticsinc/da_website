@@ -1,10 +1,3 @@
-/*!
- * GMaps.js v0.2.26
- * http://hpneo.github.com/gmaps/
- *
- * Copyright 2012, Gustavo Leon
- * Released under the MIT License.
- */
 
 if(window.google && window.google.maps){
 

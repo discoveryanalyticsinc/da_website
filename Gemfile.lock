@@ -2,12 +2,18 @@ GEM
   remote: https://rubygems.org/
   specs:
     daemon_controller (1.2.0)
+    daemons (1.2.3)
+    eventmachine (1.0.8)
     passenger (4.0.45)
       daemon_controller (>= 1.2.0)
       rack
       rake (>= 0.8.1)
     rack (1.5.2)
     rake (10.3.2)
+    thin (1.6.3)
+      daemons (~> 1.0, >= 1.0.9)
+      eventmachine (~> 1.0)
+      rack (~> 1.0)
 
 PLATFORMS
   ruby
@@ -15,3 +21,7 @@ PLATFORMS
 DEPENDENCIES
   passenger
   rack
+  thin
+
+BUNDLED WITH
+   1.10.6
